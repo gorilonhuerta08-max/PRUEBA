@@ -17,10 +17,15 @@
  
 body {
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  background-color: var(--bg-dark-blue);
+  background-color: #0b0f19;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(0, 212, 255, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(138, 43, 226, 0.25) 0%, transparent 40%);
+  background-attachment: fixed;
   color: var(--text-white);
   line-height: 1.6;
 }
+ 
  
 .header {
   background-color: var(--bg-black);
@@ -298,4 +303,261 @@ h2::after {
   background-color: var(--accent-hover);
   color: #ffffff;
   box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+} 
+
+ 
+
+html {
+  scroll-behavior: smooth;
 }
+ 
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(5, 7, 12, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  border-bottom: 1px solid var(--border-blue);
+  z-index: 1000;
+}
+ 
+.navbar a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+ 
+.navbar a:hover {
+  color: var(--accent-cyan);
+}
+
+
+.card:hover, .grid-galeria img:hover {
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  border-color: var(--accent-cyan);
+}
+ 
+
+.footer {
+  text-align: center;
+  padding: 25px 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-blue);
+  background-color: var(--bg-black);
+}
+
+.seccion-Agus {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+ 
+.Agus-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 75, 114, 0.3);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  box-shadow: 0 0 20px rgba(255, 75, 114, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.Agus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 75, 114, 0.3);
+}
+ 
+.Agus-info h2 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+ 
+.Agus-info p {
+  color: #a0aec0;
+  line-height: 1.6;
+}
+ 
+.Agus-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+ 
+.Agus-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff4b72;
+  box-shadow: 0 0 12px rgba(255, 75, 114, 0.4);
+  transition: transform 0.3s ease;
+}
+ 
+.Agus-img:hover {
+  transform: scale(1.1);
+}
+
+ 
+
+.enlaces-container a, 
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-blue);
+  border-radius: 12px;
+  color: var(--text-white);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+ 
+.enlaces-container a:hover,
+.social-btn:hover {
+  border-color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.12);
+  transform: translateY(-3px);
+}
+ 
+
+form input, 
+form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid var(--border-blue);
+  border-radius: 10px;
+  color: var(--text-white);
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+ 
+
+form input:focus, 
+form textarea:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+  background: rgba(15, 23, 42, 0.9);
+}
+ 
+
+form button,
+form input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+  border: none;
+  border-radius: 10px;
+  color: #0b0f19;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+ 
+form button:hover,
+form input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.4);
+}
+/* --- Tarjetas de Pasiones (Superman, Messi, Nightwing) --- */
+.pasiones-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin: 30px auto;
+  max-width: 900px;
+  padding: 0 20px;
+}
+ 
+.pasion-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 12px;
+  border: 1px solid var(--border-blue);
+  transition: all 0.3s ease;
+}
+ 
+.pasion-card:hover {
+  transform: translateY(-4px);
+}
+ 
+/* Superman: Azul cobalto con borde rojo al hover */
+.pasion-card.superman {
+  border-left: 4px solid #0055ff;
+}
+.pasion-card.superman:hover {
+  box-shadow: 0 0 15px rgba(0, 85, 255, 0.3);
+  border-color: #ff2233;
+}
+ 
+/* Messi: Detalles del Barça y borde azulgrana/dorado */
+.pasion-card.messi {
+  border-left: 4px solid #a50044;
+}
+.pasion-card.messi:hover {
+  box-shadow: 0 0 15px rgba(237, 187, 0, 0.3);
+  border-color: #004d98;
+}
+ 
+/* Nightwing: Azul neón eléctrico */
+.pasion-card.nightwing {
+  border-left: 4px solid #00d2ff;
+}
+.pasion-card.nightwing:hover {
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+  border-color: #00d2ff;
+}
+ 
+
+.pasion-icon {
+  font-size: 1.4rem;
+  color: var(--text-white);
+}
+ 
+.pasion-info h4 {
+  color: var(--text-white);
+  font-size: 0.95rem;
+  margin: 0;
+}
+ 
+.pasion-info p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin: 3px 0 0 0;
+}
+.pasion-card.messi .pasion-icon i {
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.6));
+}
+ 
+.pasion-card.messi:hover {
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.4);
+  border-color: #ffd700;
+}
+ 
+
+ 

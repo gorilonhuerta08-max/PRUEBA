@@ -5,8 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Benjamín Huerta - Portafolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a>
+        <a href="#tecnologias"><i class="fas fa-laptop-code"></i> Tecnologías</a>
+        <a href="#proyectos"><i class="fas fa-folder-open"></i> Proyectos</a>
+        <a href="#galeria"><i class="fas fa-images"></i> Galería</a>
+        <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
+        <a href="#novia"><i class="fas fa-heart"></i> Agustina</a>
+        
+        
+    </nav>
  
   <!-- 1. Encabezado -->
   <header class="header">
@@ -19,34 +30,50 @@
   <main class="contenedor">
  
     <!-- 2. Sobre mí -->
-    <section class="sobre-mi">
+    <section id="sobre-mi">
       <div class="sobre-mi-grid">
         <div class="sobre-mi-texto">
           <p class="frase-destacada">Apasionado por la tecnología, el fútbol y la creatividad.</p>
           <p>
-            Hola, soy Benjamín Huerta, tengo 18 años. Tengo 6 hermanos y vivo con mi papá. Me gustan mucho los superhéroes, en especial el Superman de Tom Welling (Smallville) y Nightwing, además del fútbol (Messi y FC Barcelona) y la música.
+            Hola, soy Benjamín Huerta, tengo 18 años. Tengo 5 hermanos y vivo con mi papá. Me gustan mucho los superhéroes, en especial el Superman de Tom Welling (Smallville) y Nightwing, además del fútbol (Messi y FC Barcelona) y la música.
           </p>
         </div>
         <div class="avatar-container">
-          <img src="perfil.jpg" alt="Foto de Benjamín Huerta" class="avatar">
+          <img src="img/perfil.jpg.png" alt="Foto de Benjamín Huerta" class="avatar">
+          
         </div>
       </div>
     </section>
+    <!-- Sección Novia con 3 fotos -->
+<section id="novia" class="seccion-Agus">
+  <div class="Agus-card">
+    <div class="Agus-info">
+      <h2><i class="fas fa-heart" style="color: #ff4b72;"></i> Mi Persona Favorita</h2>
+      <p>Un espacio especial dedicado a mi Agustina, que es la niña que hace que quiera mejorar cada dia como persona y estudiante, la niña que mas amo en el mundo.</p>
+    </div>
+    <div class="Agus-galeria">
+      <img src="img/Agus1.jpg" alt="Foto 1" class="Agus-img">
+      <img src="img/Agus2.jpg" alt="Foto 2" class="Agus-img">
+      <img src="img/Agus3.jpg" alt="Foto 3" class="Agus-img">
+    </div>
+  </div>
+</section>
  
     <!-- 3. Tecnologías o conocimientos -->
-    <section class="tecnologias">
+    <section id="tecnologias">
       <h2>Tecnologías o conocimientos</h2>
       <div class="chips-container">
-        <span class="chip">Scratch</span>
-        <span class="chip">PSeInt</span>
-        <span class="chip">IntelliJ IDEA</span>
-        <span class="chip">HTML5</span>
-        <span class="chip">CSS3</span>
-      </div>
+          <span class="chip"><i class="fas fa-puzzle-piece"></i> Scratch</span>
+          <span class="chip"><i class="fas fa-terminal"></i> PSeInt</span>
+          <span class="chip"><i class="fas fa-code"></i> IntelliJ IDEA</span>
+          <span class="chip"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="chip"><i class="fab fa-css3-alt"></i> CSS3</span>           
+         
+        </div>
     </section>
  
     <!-- 4. Mis proyectos -->
-    <section class="proyectos">
+    <section id="proyectos">
       <h2>Mis proyectos</h2>
       <div class="grid-proyectos">
         <article class="card">
@@ -65,13 +92,13 @@
     </section>
  
     <!-- 5. Galería de imágenes -->
-    <section class="galeria">
+    <section id="galeria">
       <h2>Galería de imágenes</h2>
       <div class="grid-galeria">
-        <img src="Superman (Smallville).jpg" alt="Superman">
-        <img src="Messi.jpg" alt="Messi">
-        <img src="Fc Barcelona.jpg" alt="Fc Barcelona">
-        <img src="nightwing.jpg" alt="mightwing">
+        <img src="img/Superman (Smallville).jpg" alt="Superman">
+        <img src="img/Messi.jpg" alt="Messi">
+        <img src="img/Fc Barcelona.jpg" alt="Fc Barcelona">
+        <img src="img/nightwing.jpg" alt="Nightwing">
       </div>
     </section>
  
@@ -96,7 +123,7 @@
           </tr>
           <tr>
             <td>Conocimientos especiales</td>
-            <td>Lionel Andrés Messi, superhéroes y fútbol en general</td>
+            <td>Lionel Andrés Messi, superhéroes, fútbol en general y videojuegos (+10.000 horas al fortnite y mas de 150 juegos de historia pasados)</td>
           </tr>
           <tr>
             <td>Pasatiempos</td>
@@ -105,8 +132,38 @@
         </tbody>
       </table>
     </section>
+    <!-- Sección Pasiones e Inspiraciones -->
+<div class="pasiones-container">
+  
+    <!-- Superman -->
+  <div class="pasion-card superman">
+    <div class="pasion-icon"><i class="fas fa-mask"></i></div>
+    <div class="pasion-info">
+      <h4>El Hombre de Acero</h4>
+      <p>Superman / Smallville</p>
+    </div>
+  </div>
  
-    <!-- 7. Enlaces -->
+  <!-- Messi -->
+  <div class="pasion-card messi">
+    <div class="pasion-icon"><i class="fas fa-trophy" style="color: #ffd700;"></i></div>
+    <div class="pasion-info">
+      <h4>El 10 Leyenda</h4>
+      <p>Lionel Messi / FC Barcelona</p>
+    </div>
+  </div>
+ 
+  <!-- Nightwing -->
+  <div class="pasion-card nightwing">
+    <div class="pasion-icon"><i class="fas fa-user-ninja"></i></div>
+    <div class="pasion-info">
+      <h4>El Viento de Blüdhaven</h4>
+      <p>Dick Grayson / Nightwing</p>
+    </div>
+  </div>
+</div>
+    
+<!-- 7. Enlaces -->
     <section class="enlaces">
       <h2>Enlaces</h2>
       <div class="contenedor-botones">
@@ -116,7 +173,7 @@
     </section>
  
     <!-- 8. Formulario de contacto -->
-    <section class="contacto">
+    <section id="contacto">
       <h2>Formulario de contacto</h2>
       <form class="form-contacto">
         <div class="campo">
@@ -137,5 +194,8 @@
  
   </main>
  
+  <footer class="footer">
+  <p>© 2026 Benjamín Huerta — Desarrollado con HTML & CSS</p>
+</footer>
 </body>
 </html>
