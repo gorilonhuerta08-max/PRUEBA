@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamín Huerta - Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <!-- 1. Encabezado -->
+  <header class="header">
+    <div class="header-content">
+      <h1 class="nombre">Benjamín<br>Huerta</h1>
+      <p class="subtitulo">Estudiante de Programación</p>
+    </div>
+  </header>
+ 
+  <main class="contenedor">
+ 
+    <!-- 2. Sobre mí -->
+    <section class="sobre-mi">
+      <div class="sobre-mi-grid">
+        <div class="sobre-mi-texto">
+          <p class="frase-destacada">Apasionado por la tecnología, el fútbol y la creatividad.</p>
+          <p>
+            Hola, soy Benjamín Huerta, tengo 18 años. Tengo 6 hermanos y vivo con mi papá. Me gustan mucho los superhéroes, en especial el Superman de Tom Welling (Smallville) y Nightwing, además del fútbol (Messi y FC Barcelona) y la música.
+          </p>
+        </div>
+        <div class="avatar-container">
+          <img src="perfil.jpg" alt="Foto de Benjamín Huerta" class="avatar">
+        </div>
+      </div>
+    </section>
+ 
+    <!-- 3. Tecnologías o conocimientos -->
+    <section class="tecnologias">
+      <h2>Tecnologías o conocimientos</h2>
+      <div class="chips-container">
+        <span class="chip">Scratch</span>
+        <span class="chip">PSeInt</span>
+        <span class="chip">IntelliJ IDEA</span>
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+      </div>
+    </section>
+ 
+    <!-- 4. Mis proyectos -->
+    <section class="proyectos">
+      <h2>Mis proyectos</h2>
+      <div class="grid-proyectos">
+        <article class="card">
+          <div class="card-body">
+            <h3>Sistema Solar</h3>
+            <p>Actividad que consiste en crear una simulación del sistema solar animada dentro de Scratch.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>Laberinto de Ratas</h3>
+            <p>Juego/Simulación en Scratch donde las ratas deben ir encontrando el camino correcto hacia la meta.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+ 
+    <!-- 5. Galería de imágenes -->
+    <section class="galeria">
+      <h2>Galería de imágenes</h2>
+      <div class="grid-galeria">
+        <img src="Superman (Smallville).jpg" alt="Superman">
+        <img src="Messi.jpg" alt="Messi">
+        <img src="Fc Barcelona.jpg" alt="Fc Barcelona">
+        <img src="nightwing.jpg" alt="mightwing">
+      </div>
+    </section>
+ 
+    <!-- 6. Tabla de información personal --> 
+    <section class="informacion-personal">
+      <h2>Información Personal</h2>
+      <table class="tabla-info">
+        <thead>
+          <tr>
+            <th>Dato</th>
+            <th>Detalle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Edad</td>
+            <td>18 años</td>
+          </tr>
+          <tr>
+            <td>Nacionalidad</td>
+            <td>Chilena</td>
+          </tr>
+          <tr>
+            <td>Conocimientos especiales</td>
+            <td>Lionel Andrés Messi, superhéroes y fútbol en general</td>
+          </tr>
+          <tr>
+            <td>Pasatiempos</td>
+            <td>Jugar videojuegos, jugar a la pelota, escuchar música y salir a caminar por largo tiempo</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+ 
+    <!-- 7. Enlaces -->
+    <section class="enlaces">
+      <h2>Enlaces</h2>
+      <div class="contenedor-botones">
+        <a href="https://github.com" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.instagram.com/issem_ballack1899" target="_blank" class="btn">Instagram</a>
+      </div>
+    </section>
+ 
+    <!-- 8. Formulario de contacto -->
+    <section class="contacto">
+      <h2>Formulario de contacto</h2>
+      <form class="form-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="campo">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" placeholder="tuemail@ejemplo.com">
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+      </form>
+    </section>
+ 
+  </main>
+ 
+</body>
+</html>
